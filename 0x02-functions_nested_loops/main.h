@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 int _putchar(char c);
-int sum_of_multiples(void);
+void print_fibonacci(void);
 
 #endif /* MAIN_H */
 
