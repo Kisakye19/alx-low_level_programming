@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 int _putchar(char c);
-void print_to_98(int n);
+int sum_of_multiples(void);
 
 #endif /* MAIN_H */
 
