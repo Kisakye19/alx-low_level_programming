@@ -4,7 +4,7 @@
 #include <unistd.h>
 
 int _putchar(char c);
-void times_table(void);
+int add(int a, int b);
 
 #endif /* MAIN_H */
 
