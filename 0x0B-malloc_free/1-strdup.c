@@ -1,38 +1,37 @@
 #include "main.h"
 
 /**
- * Calculate the length of the input string
- * Allocate memory for the duplicate string
- * Check if memory allocation was successful
- *main-Copy the input string to the duplicate
- */
-char *_strdup(char *str) 
-{
-char *dup;
-int len = 0;
-int i;
+* _strdup - returns a pointer to a newly allocated
+*space in memory, which contains a copy of the
+*string given as a parameter.
+*@str:String to be copied
+*
+*Return: NULL in case of error, pointer to allocated
+*space
+*/
 
-if (str == NULL) 
+char *_strdup(char *str)
 {
-return NULL;
-}
+	char *cpy;
+	int index, len;
 
-for (dup[len] != '\0',len++) 
-{
-return (i);
-}
+	if (str == NULL)
+		return (NULL);
 
-dup = malloc((len + 1) * sizeof(char));
-    
-if (dup == NULL) 
-{
-return NULL;
-}
+	for (index = 0; str[index]; index++)
+		len++;
+	cpy = malloc(sizeof(char) * (len + 1));
 
-for (i = 0; str[i]; i++) 
-{
-dup[i] = str[i];
-}
+	if (cpy == NULL)
+		return (NULL);
 
-return (dup);
+	for (index = 0; str[index]; index++)
+	{
+		cpy[index] = str[index];
+	}
+
+	cpy[len] = '\0';
+
+	return (cpy);
+
 }
